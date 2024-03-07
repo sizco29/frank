@@ -2,14 +2,19 @@
 import TitleComponent from "@/components/title_component";
 import Footer from "@/components/footer";
 import ColophonSectionContainer from "@/components/colophon_section";
+import Link from "next/link";
+import ExperienceDetails from "@/components/experience_components/experience_details";
+import ExperienceTime from "@/components/experience_components/experience_time";
+import PostLink from "@/components/post_components/post_links";
+import BookLink from "@/components/reading_components/book_link";
 
 //icon
-import { BookText } from "lucide-react";
+import { Book } from "lucide-react";
 import { Brain } from 'lucide-react'
 import { BookCopy } from "lucide-react";
 import { BoomBox } from "lucide-react";
-import ExperienceDetails from "@/components/experience_components/experience_details";
-import ExperienceTime from "@/components/experience_components/experience_time";
+import { NotebookPen } from "lucide-react";
+
 
 
 
@@ -42,6 +47,18 @@ export default function Home() {
       <ColophonSectionContainer title="Experience" icon={<Brain size={14}/>}>
 
         <div className="flex flex-col space-y-4">
+
+        <div className="flex items-start justify-between">
+            <ExperienceDetails
+            experienceTitle="Software Developer | IOS Dev"
+            experienceCompany="Westshore Paving"
+            experienceCompanyLink="http://www.westshorepaving.com/"
+            experienceLocation="Remote, Florida" />
+            <ExperienceTime
+            experienceInitialDate="03/2024"
+            expCurrent={true} />
+          </div>
+
           <div className="flex items-start justify-between">
             <ExperienceDetails
             experienceTitle="Shopify Developer"
@@ -94,9 +111,40 @@ export default function Home() {
 
       <ColophonSectionContainer title="Posts" icon={<BookCopy size={14}/>}>
 
+        <div className="space-x-4">
+
+          <ul className="space-y-2 mb-2">
+            <PostLink 
+            title="Trying out new things"
+            link="#"
+            icon={<NotebookPen size={14}/>}
+             />
+              <PostLink 
+            title="Trying out new things"
+            link="#"
+            icon={<NotebookPen size={14}/>}
+             />
+              <PostLink 
+            title="Trying out new things"
+            link="#"
+            icon={<NotebookPen size={14}/>}
+             />
+          </ul>
+
+          <Link className="text-sm text-gray-400" href={"/posts"}>View all</Link>
+
+        </div>
+
       </ColophonSectionContainer>
 
-      <ColophonSectionContainer title="Reading" icon={<BookText size={14}/>}>
+      <ColophonSectionContainer title="Reading" icon={<Book size={14}/>}>
+
+        <div className="space-y-4">
+          <BookLink />
+
+          <BookLink />
+
+        </div>
 
       </ColophonSectionContainer>
 
