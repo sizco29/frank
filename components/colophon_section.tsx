@@ -3,7 +3,7 @@ import { Children } from "react"
 export default function ColophonSectionContainer(props: any) {
     return (
 
-        <section className="grid px-4 border-t  pt-6 gap-4">
+        <section className="grid md:grid-cols-[1fr,1.5fr] px-4 md:gap-0 border-t  pt-6 gap-4">
 
             <div>
                 <div>

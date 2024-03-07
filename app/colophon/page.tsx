@@ -1,6 +1,6 @@
 
 // Components
-import ColophonSectionContainer  from "../../components/colophon_section_container" 
+import ColophonSectionContainer  from "../../components/colophon_section" 
 import Link from 'next/link'
 import Footer from "@/components/footer"
 

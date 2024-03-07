@@ -15,7 +15,7 @@ export default function ColophonLayout({
       <main
       className={`
         ${inter.className}
-        w-full px-2 mx-auto mt-[1.5rem] mb-12
+        w-full px-2 mx-auto mt-[1.5rem] mb-12 container
     `}>{children}</main>
     
   );
