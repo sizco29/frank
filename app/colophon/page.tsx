@@ -1,8 +1,8 @@
-
 // Components
 import ColophonSectionContainer  from "../../components/colophon_section" 
 import Link from 'next/link'
 import Footer from "@/components/footer"
+import TitleComponent from "@/components/title_component"
 
 // icons
 import { Code } from 'lucide-react'
@@ -16,18 +16,13 @@ import { Lightbulb } from 'lucide-react'
 export default function Page() {
     return (
         <>
-      
 
         <div className="space-y-6">
-            <section>
-            <div className="grid px-4 gap-4">
-                <div className="undefined">
-                <h1 className="text-xl">Colophon</h1>
-                <p className="text-gray-400">A Guide to this website</p>
-                </div>
-            </div>
-            </section>
 
+            <div className="px-4">
+            <TitleComponent title="Colophon" titleDescription="A Guide to this website"/>
+            </div>
+            
             <ColophonSectionContainer title ="Tech Stack" icon={<Code size={14}/>}> 
 
                 <div className="space-y-4">
