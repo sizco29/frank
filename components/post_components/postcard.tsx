@@ -1,22 +1,30 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
+import Link from "next/link";
+
+import { MoveRight } from "lucide-react";
 
 
 
 export default function BookCard() {
     return(
         <>
-        <section className=" bg-[#262626] flex flex-col
-        justify-between w-[200px] h-[288px] rounded-md p-[8px] shadow-md
-        hover:translate-y-[5px] transition ease-in delay-100">
-            <div>
+        <section className=" flex flex-col
+         w-full rounded-md p-[8px] shadow-md">
+            <div className="flex items-center justify-between
+            transform  hover:translate-x-1 transition-all ease-in">
+                <div className="">
                 <Image
-                className="rounded-md h-40"
-                width={184}
+                className="rounded-md h-[100px]"
+                width={100}
                 height={1}
                 alt="something"
                 src="https://assets.literal.club/4/ckn6dmh66108831i8djowf9emm.jpg" />
-                <h4 className="mt-3 font-semibold text-[0.875rem] ">
+
+                </div>
+                
+                <div className=" space-y-2 flex flex-col items-start ">
+                <h4 className="mt-3 font-semibold text-[0.875rem]
+                 hover:text-emerald-500 transition ease-in">
                     <span>
                         Trying Out New Things
                     </span>
@@ -26,8 +34,16 @@ export default function BookCard() {
                         A brief exploration of stepping out of my comfort zone.
                     </span>
                 </p>
+                <Link className="text-xs flex items-center gap-1" href={"#"}> 
+                Read more 
+                <MoveRight size={12} /> </Link>
+                
+                </div>
+               
+                
             </div>
-            <Button variant={"ghost"} className="h-8 w-full hover:bg-emerald-500 hover:text-white"> Read more</Button>
+            
+           
         </section>
         </>
     );

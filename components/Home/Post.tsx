@@ -17,7 +17,7 @@ export default function Posts() {
 
 <div className="space-x-4">
 
-  <div className="space-y-2 mb-2 grid md:grid-cols-2 sm:grid-cols-[-1fr,fr] items-center">
+  <div className="space-y-2 mb-2 grid md:grid-cols-[-1fr,1.5fr] items-center">
      <BookCard />
      <BookCard />
      <BookCard />
