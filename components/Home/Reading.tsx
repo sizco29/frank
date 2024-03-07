@@ -11,9 +11,7 @@ export default function Reading(){
 
         <div className="space-y-4">
           <MediaCard/>
-
-          <MediaCard />
-
+          
         </div>
 
       </ColophonSectionContainer>

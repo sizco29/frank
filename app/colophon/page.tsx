@@ -112,8 +112,8 @@ export default function Page() {
 
                 <div className="space-y-4">
                     <p>
-                        God knows i've been trying to build my website for the longest but i always put it on hold because i cannot wrap
-                        my mind around the design part of it but i've visited many websites and some of them are simple and others are almost
+                        God knows i&apos;ve been trying to build my website for the longest but i always put it on hold because i cannot wrap
+                        my mind around the design part of it but i&apos;ve visited many websites and some of them are simple and others are almost
                         like navigating a spaceship nevertheless i want to mention some of the website that inspired me the most:
                     </p>
                     <div className="flex flex-col space-y-1 text-sm ">

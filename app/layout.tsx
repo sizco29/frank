@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`
         ${inter.className}
-        w-full px-2 mx-auto mt-[1.5rem] mb-12 container`}
+        w-full px-2 mx-auto mt-[1.5rem] mb-12 global-padding container`}
         >{children}</body>
     </html>
   );
