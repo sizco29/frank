@@ -9,7 +9,7 @@ export default function BookCard() {
     return(
         <>
         <section className=" flex flex-col
-         w-full rounded-md p-[8px] shadow-md">
+         w-full rounded-md shadow-md">
             <div className="flex items-center justify-between space-x-4
             transform  hover:translate-x-1 transition-all ease-in">
                 <div className="">
