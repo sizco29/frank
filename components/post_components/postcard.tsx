@@ -10,7 +10,7 @@ export default function BookCard() {
         <>
         <section className=" flex flex-col
          w-full rounded-md p-[8px] shadow-md">
-            <div className="flex items-center justify-between
+            <div className="flex items-center justify-between space-x-4
             transform  hover:translate-x-1 transition-all ease-in">
                 <div className="">
                 <Image
@@ -22,7 +22,7 @@ export default function BookCard() {
 
                 </div>
                 
-                <div className=" space-y-2 flex flex-col items-start ">
+                <div className=" space-y-2 flex flex-col justify-between w-full ">
                 <h4 className="mt-3 font-semibold text-[0.875rem]
                  hover:text-emerald-500 transition ease-in">
                     <span>
