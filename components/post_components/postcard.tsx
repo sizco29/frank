@@ -1,16 +1,12 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { Ghost } from "lucide-react";
-
-// components
 
 
-// icons
 
 export default function BookCard() {
     return(
         <>
-        <section className=" bg-[#262626] flex flex-col 
+        <section className=" bg-[#262626] flex flex-col
         justify-between w-[200px] h-[288px] rounded-md p-[8px] shadow-md
         hover:translate-y-[5px] transition ease-in delay-100">
             <div>
