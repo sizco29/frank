@@ -98,6 +98,10 @@ a {
   .container {
     max-width: 800px;
   }
+  .global-padding {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 @keyframes pulse {

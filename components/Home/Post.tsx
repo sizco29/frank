@@ -33,7 +33,7 @@ export default function Posts() {
              />
           </ul>
     
-          <Link className="text-sm text-gray-400" href={"/posts"}>View all</Link>
+          <Link className="text-sm text-gray-400" href={"/writing"}>View all</Link>
     
         </div>
         </ColophonSectionContainer>

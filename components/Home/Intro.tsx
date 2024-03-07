@@ -11,7 +11,7 @@ export default function Intro(){
 
         <div className="space-y-2 text-justify">
           <p>
-            Hello there, I am Francisco - <small><em>[sizco, paco, frank] for short, </em></small>, a Software enthusiast based in United States.
+            Hello there, I am Francisco - <small><em>[sizco, paco, frank] for short</em></small>, a Software enthusiast based in United States.
             currently self-learning to improve my skills in overall Web development and software development to become a software developer.
           </p>
 
